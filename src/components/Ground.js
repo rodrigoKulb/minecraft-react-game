@@ -5,6 +5,7 @@ import grass from '../images/grass.jpg';
 import { useStore } from '../hooks/useStore';
 import useSound from 'use-sound';
 import boopSfx from '../audio/pedra.wav';
+import * as THREE from 'three'
 
 
 export const Ground = (props) => {
@@ -19,6 +20,8 @@ export const Ground = (props) => {
   texture.wrapS = RepeatWrapping;
   texture.wrapT = RepeatWrapping;
   texture.repeat.set(100, 100);
+  texture.magFilter = THREE.NearestFilter;
+  texture.minFilter = THREE.LinearMipMapLinearFilter;
   return (
     <mesh
       ref={ref}
