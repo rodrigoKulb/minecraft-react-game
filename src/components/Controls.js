@@ -11,7 +11,7 @@ export const Controls = (props) => {
     ]);
 
 
-    const updateRequest = new FormData();
+    const updateRequest = new FormData(); 
     updateRequest.append('nome', values.nome);
     updateRequest.append('titulo', values.titulo);
     updateRequest.append('mapa', window.localStorage.getItem('world'));
