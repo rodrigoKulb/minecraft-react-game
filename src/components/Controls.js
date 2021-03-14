@@ -26,7 +26,7 @@ export const Controls = (props) => {
           }
         }).then(res => res.json())
         .then(response => {
-            console.log('Success:', response);
+            console.log('Sucesso:', response);
 
         })
         .catch(error => console.error('Error:', error));
