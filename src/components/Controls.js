@@ -17,7 +17,7 @@ export const Controls = (props) => {
     updateRequest.append('mapa', window.localStorage.getItem('world'));
 
     const enviarContato = () => {
-        var url = 'http://rodrigo-kulb.com.br/api-minecraft/cadastrarDados.php';
+        var url = 'https://rodrigo-kulb.com.br/api-minecraft/cadastrarDados.php';
         fetch(url, {
           method: 'POST',
           body: updateRequest,
@@ -40,7 +40,7 @@ export const Controls = (props) => {
         setDivMapas(true); 
         setDivSalvar(false);  
 
-        var url = 'http://rodrigo-kulb.com.br/api-minecraft/pegarDados.php?id='+chave;
+        var url = 'https://rodrigo-kulb.com.br/api-minecraft/pegarDados.php?id='+chave;
         fetch(url, {
           method: 'GET',
           headers:{
@@ -67,7 +67,7 @@ export const Controls = (props) => {
         setDivMapas(true); 
         setDivSalvar(false);  
 
-        var url = 'http://rodrigo-kulb.com.br/api-minecraft/pegarDados.php';
+        var url = 'https://rodrigo-kulb.com.br/api-minecraft/pegarDados.php';
         fetch(url, {
           method: 'GET',
           headers:{
