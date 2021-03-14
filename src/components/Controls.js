@@ -6,7 +6,7 @@ export const Controls = (props) => {
 
     const [{ values, loading }, handleChange, handleSubmit] = useForm();
     const [listItens, setListItens] = useState([
-        {id:1, nome: "CARREGANDO...", titulo: "teste" },
+        {id:1, nome: "CARREGANDO....", titulo: "teste" },
         
     ]);
 
