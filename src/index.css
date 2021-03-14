@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+body {
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior-y: none;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  color: black;
+}
+
+.botoesZerar{
+  position: absolute;
+  right: 10px;
+  z-index: 1000;
+  top: 10px;
+  width: 100px;
+  padding: 5px;;
+  background-color: brown;
+  text-align: center;
+}
+
+.botoesSalvar{
+  right: 110px;
+}
+.botoesZerar{
+  right: 10px;
+}
+.botoesCarregar{
+  right: 210px;
+}
+
+.btn{
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  background-color: rgb(56, 144, 202);
+  border:  solid 1px rgb(17, 8, 148);
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: rgb(12, 9, 65);
+  color:white;
+}
+
+.botoesSalvar.a:active{
+  text-decoration: none;;
+}
+
+.linkOff{
+  text-decoration: none;
+  color:black;
+}
+
+.linkOff:hover{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+}
+
+
+
+.quadro{
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  z-index: 1000;
+  width: 500px;
+  background-color: rgb(235, 235, 235);
+  top: 200px;
+  bottom: 200px;
+  padding: 20px;
+  border-radius: 30px 0px 30px 0px;
+  max-height: 400px;
+  min-height: 350px;
+  display: none;
+
+}
+
+.quadroMapas{
+  max-height:1000px;
+}
+
+h3{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(83, 83, 83);
+}
+
+.inputForm{
+  width: 100%;
+  box-shadow:  0 0 0.5em rgb(82, 82, 82);
+  border: 0px;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.divForm{
+
+  width: 100%;
+}
+
+.espaco{
+  height: 20px;
+  width: 100%;
+}
+
+.buttonForm{
+  background-color: #c16c5b;
+  color: white;
+  border: 0px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  border-radius: 5px;
+
+}
+
+.flexCenter{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+
+.fecharBtn{
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  border-radius: 43%;
+  background-color: #c16c5b;
+  text-align: center;
+  padding: 10px 12px;
+  border: 1px solid #882121;
+  color: white;
+}
+
+.dados{
+  border:1px solid black;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.listaDiv{
+  overflow:auto;
+  height: 100%;
+}

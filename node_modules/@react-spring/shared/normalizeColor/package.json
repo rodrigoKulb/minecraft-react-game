@@ -1,0 +1,7 @@
+{
+  "name": "@react-spring/shared/normalizeColor",
+  "private": true,
+  "main": "../cjs/normalizeColor.js",
+  "module": "../esm/normalizeColor.js",
+  "types": "../esm/normalizeColor.d.ts"
+}

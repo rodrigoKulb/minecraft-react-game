@@ -1,0 +1,7 @@
+{
+  "name": "@react-spring/shared/createInterpolator",
+  "private": true,
+  "main": "../cjs/createInterpolator.js",
+  "module": "../esm/createInterpolator.js",
+  "types": "../esm/createInterpolator.d.ts"
+}

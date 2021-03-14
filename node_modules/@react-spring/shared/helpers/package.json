@@ -1,0 +1,7 @@
+{
+  "name": "@react-spring/shared/helpers",
+  "private": true,
+  "main": "../cjs/helpers.js",
+  "module": "../esm/helpers.js",
+  "types": "../esm/helpers.d.ts"
+}

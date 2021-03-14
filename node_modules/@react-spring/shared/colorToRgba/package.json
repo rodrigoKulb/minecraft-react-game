@@ -1,0 +1,7 @@
+{
+  "name": "@react-spring/shared/colorToRgba",
+  "private": true,
+  "main": "../cjs/colorToRgba.js",
+  "module": "../esm/colorToRgba.js",
+  "types": "../esm/colorToRgba.d.ts"
+}

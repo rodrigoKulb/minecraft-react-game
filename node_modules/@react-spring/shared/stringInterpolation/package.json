@@ -1,0 +1,7 @@
+{
+  "name": "@react-spring/shared/stringInterpolation",
+  "private": true,
+  "main": "../cjs/stringInterpolation.js",
+  "module": "../esm/stringInterpolation.js",
+  "types": "../esm/stringInterpolation.d.ts"
+}

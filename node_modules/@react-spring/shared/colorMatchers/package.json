@@ -1,0 +1,7 @@
+{
+  "name": "@react-spring/shared/colorMatchers",
+  "private": true,
+  "main": "../cjs/colorMatchers.js",
+  "module": "../esm/colorMatchers.js",
+  "types": "../esm/colorMatchers.d.ts"
+}

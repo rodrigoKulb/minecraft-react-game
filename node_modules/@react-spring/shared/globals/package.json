@@ -1,0 +1,7 @@
+{
+  "name": "@react-spring/shared/globals",
+  "private": true,
+  "main": "../cjs/globals.js",
+  "module": "../esm/globals.js",
+  "types": "../esm/globals.d.ts"
+}
