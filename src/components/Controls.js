@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import useForm from "../hooks/useForm";
-import { nanoid } from 'nanoid';
+//import { nanoid } from 'nanoid';
 
 export const Controls = (props) => {
 

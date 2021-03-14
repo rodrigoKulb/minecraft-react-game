@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useStore } from './useStore';
-import andarSom from '../audio/andar.wav';
-import jumpSom from '../audio/jump.wav';
+//import andarSom from '../audio/andar.wav';
+//import jumpSom from '../audio/jump.wav';
 
 
 
@@ -50,8 +50,8 @@ export const useKeyboardControls = () => {
 
   const [setTexture] = useStore((state) => [state.setTexture]);
   //const [plaingCount,setPlaingCount] = useState(0);
-  const [playAndar] = useState(new Audio(andarSom));
-  const [playJump] = useState(new Audio(jumpSom));
+  //const [playAndar] = useState(new Audio(andarSom));
+  //const [playJump] = useState(new Audio(jumpSom));
   
 
   let plaingCount =  [];
@@ -60,30 +60,30 @@ export const useKeyboardControls = () => {
   plaingCount['KeyW'] = 0;
   plaingCount['KeyD'] = 0;
 
-  let total = 0;
+  //let total = 0;
   useEffect(() => {
   
     const teclaKeyDown = (e) => {
-      if(e.code==='Space')  playJump.play();
-      plaingCount[e.code] = 1;
-      total =   plaingCount['KeyS']+plaingCount['KeyA']+plaingCount['KeyW']+plaingCount['KeyD'];
+    //   if(e.code==='Space')  playJump.play();
+    //   plaingCount[e.code] = 1;
+    //   total =   plaingCount['KeyS']+plaingCount['KeyA']+plaingCount['KeyW']+plaingCount['KeyD'];
 
-      if(total>0){
-        playAndar.play();
-      }
-      for ( var i = 0; i < plaingCount.length; i++ ){
-        total += plaingCount[i];
+    //   if(total>0){
+    //     playAndar.play();
+    //   }
+    //   for ( var i = 0; i < plaingCount.length; i++ ){
+    //     total += plaingCount[i];
  
+    //  }
      }
-    }
     const teclaKeyUp = (e) => {
-      plaingCount[e.code] = 0;
-      total =   plaingCount['KeyS']+plaingCount['KeyA']+plaingCount['KeyW']+plaingCount['KeyD'];
+      //plaingCount[e.code] = 0;
+      //total =   plaingCount['KeyS']+plaingCount['KeyA']+plaingCount['KeyW']+plaingCount['KeyD'];
       
-      if(total===0){
+      //if(total===0){
 
-      playAndar.pause();
-     }
+      //playAndar.pause();
+     //}
     }
     document.addEventListener('keydown', teclaKeyDown);
     document.addEventListener('keyup', teclaKeyUp);
