@@ -22,11 +22,12 @@ function actionByKey(key) {
 function textureByKey(key) {
   const keys = {
     Digit1: 'dirt',
-    Digit2: 'grass',
-    Digit3: 'glass',
+    Digit2: 'glass',
+    Digit3: 'green',
     Digit4: 'wood',
     Digit5: 'log',
     Digit6: 'dirtgrass',
+    Digit7: 'agua',
   };
   return keys[key];
 }
@@ -60,45 +61,59 @@ export const useKeyboardControls = () => {
   plaingCount['KeyW'] = 0;
   plaingCount['KeyD'] = 0;
 
-  //let total = 0;
-  useEffect(() => {
-  
-    const teclaKeyDown = (e) => {
-    //   if(e.code==='Space')  playJump.play();
-    //   plaingCount[e.code] = 1;
-    //   total =   plaingCount['KeyS']+plaingCount['KeyA']+plaingCount['KeyW']+plaingCount['KeyD'];
+  // //let total = 0;
+  // useEffect(() => {
+    
+  //   const teclaKeyPress = (e) => {
+  //     console.log(e.code);
+  //     if(e.code==='Escape')
+  //     {
+  //       document.getElementById("aparece").style.display = 'block';
+       
+  //     }
+  //     if(e.code==='KeyS' || e.code==='KeyA' || e.code==='KeyW' || e.code==='KeyD')
+  //     {
+  //       animaMao();
+  //     }
+  //   //   if(e.code==='Space')  playJump.play();
+  //   //   plaingCount[e.code] = 1;
+  //   //   total =   plaingCount['KeyS']+plaingCount['KeyA']+plaingCount['KeyW']+plaingCount['KeyD'];
 
-    //   if(total>0){
-    //     playAndar.play();
-    //   }
-    //   for ( var i = 0; i < plaingCount.length; i++ ){
-    //     total += plaingCount[i];
+  //   //   if(total>0){
+  //   //     playAndar.play();
+  //   //   }
+  //   //   for ( var i = 0; i < plaingCount.length; i++ ){
+  //   //     total += plaingCount[i];
  
-    //  }
-     }
-    const teclaKeyUp = (e) => {
-      //plaingCount[e.code] = 0;
-      //total =   plaingCount['KeyS']+plaingCount['KeyA']+plaingCount['KeyW']+plaingCount['KeyD'];
+  //   //  }
+  //    }
+  //   const teclaKeyUp = (e) => {
+  //     if(e.code==='KeyS' || e.code==='KeyA' || e.code==='KeyW' || e.code==='KeyD')
+  //     {
+  //       animaMao();
+  //     }
+  //     //plaingCount[e.code] = 0;
+  //     //total =   plaingCount['KeyS']+plaingCount['KeyA']+plaingCount['KeyW']+plaingCount['KeyD'];
       
-      //if(total===0){
+  //     //if(total===0){
 
-      //playAndar.pause();
-     //}
-    }
-    document.addEventListener('keydown', teclaKeyDown);
-    document.addEventListener('keyup', teclaKeyUp);
+  //     //playAndar.pause();
+  //    //}
+  //   }
+  //   document.addEventListener('keypress', teclaKeyPress);
+  //   document.addEventListener('keyup', teclaKeyUp);
 
-    return () => {
-      document.removeEventListener('keydown', teclaKeyDown);
-      document.removeEventListener('keyup', teclaKeyUp);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('keypress', teclaKeyPress);
+  //     document.removeEventListener('keyup', teclaKeyUp);
+  //   };
+  // }, []);
 
 
   useEffect(() => {
    
     const handleKeyDown = (e) => {
-     
+
       // Movement key
       if (actionByKey(e.code)) {
         setMovement((state) => ({
@@ -112,7 +127,8 @@ export const useKeyboardControls = () => {
       }
     };
     const handleKeyUp = (e) => {
-      
+
+
       if (actionByKey(e.code)) {
         setMovement((state) => ({
           ...state,

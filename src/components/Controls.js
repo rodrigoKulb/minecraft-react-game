@@ -1,8 +1,20 @@
 import React, { useState} from 'react';
 import useForm from "../hooks/useForm";
+import Cube from './Cube';
+import { useStore } from '../hooks/useStore';
+import teclado from '../images/teclado.png'; 
+import logo from '../images/logo.png';
+import mira from '../images/mira.png';
+import mao from '../images/mao.png';
 //import { nanoid } from 'nanoid';
 
+
+
 export const Controls = (props) => {
+
+    const [saveWorld] = useStore((state) => [
+        state.saveWorld,
+      ]);
 
     const [{ values, loading }, handleChange, handleSubmit] = useForm();
     const [listItens, setListItens] = useState([
@@ -62,7 +74,7 @@ export const Controls = (props) => {
     const [mostraMapas, setDivMapas] = useState(false);
 
 
-    const abreDivSalvar = () => {setDivSalvar(true); setDivMapas(false); }
+    const abreDivSalvar = () => {setDivSalvar(true); setDivMapas(false);  saveWorld(Cube.cubes); }
     const abreDivMapas = () => { 
         setDivMapas(true); 
         setDivSalvar(false);  
@@ -85,15 +97,32 @@ export const Controls = (props) => {
 
     const fechaDivSalvar = () => {
         setDivSalvar(false);
+        setDivMapas(false); 
     }
 
 
 return(
     <>
+    <img className="mao" alt="mao" id="mao" src={mao} />
+    <img className="mira" alt="mira" src={mira} />
+    <div id="aparece"> 
+        <div className="inicarDiv"></div>
+        <img className="logo" alt="logo" src={logo} />
+        <div className="textoExplicativo">
+            <center><b>Seja bem-vindo ao Mimecraft Three Fiber</b><br /><br />Saiba mais sobre o assunto nos links abaixo:<br></br> 
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/rodrigoKulb">youtube.com/rodrigoKulb</a>
+            <br></br>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/rodrigoKulb/minecraft-react-game">github.com/rodrigoKulb/minecraft-react-game</a>
+            </center>
+        </div>
+        <div className="btnStart">INICIAR</div>
+        <div className="instrucoes"><img src={teclado} alt="teclado" width="400" /></div>
+    </div>
     <div className="botoesCarregar btn" onClick={abreDivMapas} >Abrir Mapa</div>
     <div className="botoesSalvar btn" onClick={abreDivSalvar} >Salvar Mapa</div>
     <div className="botoesZerar btn" ><a href="/" className="linkOff">Novo Mapa</a></div>
     <div className="quadroMapas quadro"  style={{ display: mostraMapas ? "block" : "none" }}>
+    <div className="fecharBtn" onClick={fechaDivSalvar}>X</div>
         <h3>Lista de mapas salvos no servidor</h3>
         <div className="listaDiv">
             {listItens.map(item => (
@@ -112,8 +141,8 @@ return(
             </div>
             <div className="espaco"></div>
             <div className="divForm">
-                <label>Titulo:</label>
-                <input  placeholder="Digite um título para o seu mapa" name="titulo"  className="inputForm" onChange={handleChange}/>
+                <label>Senha:</label>
+                <input  placeholder="Digite uma senha para salvar futuramente seu mapa" name="titulo"  className="inputForm" onChange={handleChange}/>
             </div>
             <div className="espaco"></div>
             <div className="divForm">

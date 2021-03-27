@@ -19,11 +19,18 @@ body,
   overflow: hidden;
 }
 
+@font-face {
+  font-family: 'Minecraftia';
+  src: local('Minecraftia'), url('./fonts/Minecraftia-Regular.ttf') format('truetype');
+} 
+
+
 body {
   position: fixed;
   overflow: hidden;
   overscroll-behavior-y: none;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: Minecraftia, Arial, serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif; */
   color: black;
 }
 
@@ -39,30 +46,33 @@ body {
 }
 
 .botoesSalvar{
-  right: 110px;
+  right: 140px;
 }
 .botoesZerar{
   right: 10px;
 }
 .botoesCarregar{
-  right: 210px;
+  right: 270px;
 }
 
 .btn{
   position: absolute;
   z-index: 1000;
   top: 10px;
-  background-color: rgb(56, 144, 202);
-  border:  solid 1px rgb(17, 8, 148);
-  padding: 5px;
-  width: 100px;
+  background-color: #6d6d6d;
+  border:  solid 1px #000;
+  padding: 6px;
+  width: 120px;
   text-align: center;
   font-size: 13px;
   cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px #252525;
+  
 }
 
 .btn:hover{
-  background-color: rgb(12, 9, 65);
+  background-color: #7e88bf;
   color:white;
 }
 
@@ -75,7 +85,7 @@ body {
   color:black;
 }
 
-.linkOff:hover{
+.linkOff:any-link{
   text-decoration: none;
   color:rgb(255, 255, 255);
 }
@@ -85,17 +95,18 @@ body {
 .quadro{
   position: absolute;
   left: 50%;
-  margin-left: -250px;
+  margin-left: -300px;
   z-index: 1000;
-  width: 500px;
-  background-color: rgb(235, 235, 235);
+  width: 600px;
+  background-color: rgb(109 109 109);
   top: 200px;
   bottom: 200px;
   padding: 20px;
-  border-radius: 30px 0px 30px 0px;
   max-height: 400px;
   min-height: 350px;
   display: none;
+  color: white;
+  border: 3px solid black;
 
 }
 
@@ -106,7 +117,7 @@ body {
 h3{
   text-align: center;
   text-transform: uppercase;
-  color: rgb(83, 83, 83);
+  color: rgb(255, 255, 255);
 }
 
 .inputForm{
@@ -154,12 +165,12 @@ h3{
   position: absolute;
   right: -10px;
   top: -10px;
-  border-radius: 43%;
   background-color: #c16c5b;
   text-align: center;
   padding: 10px 12px;
   border: 1px solid #882121;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .dados{
@@ -171,4 +182,108 @@ h3{
 .listaDiv{
   overflow:auto;
   height: 100%;
+}
+
+.inicarDiv
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 799;
+    background-image: url('../src/images/fundo.jpg');
+    background-size: cover;
+}
+
+
+.btnStart:hover{
+  background-color: #7e88bf;
+  color:white;
+}
+
+.btnStart
+{
+  font-size: large;
+  position: absolute;
+  z-index: 800;
+  padding: 10px;
+  width: 140px;
+  text-align: center;
+  background-color: #345f30;
+  color:white;
+  margin-left: -70px;
+  left: 50%;
+  top: 50%;
+  cursor: pointer;
+  border: 3px solid black;
+}
+
+.instrucoes
+{
+  width: 400px;
+  position: absolute;
+  z-index: 800;
+  bottom: 10%;
+  margin-top: 60px;
+  margin-left: -200px;
+  left: 50%;
+
+}
+
+.textoExplicativo
+{
+  position: absolute;
+  width: 600px;
+  background: #6d6d6d;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  z-index: 800;
+  left: 50%;
+  margin-left: -300px;
+  top: 40%;
+  margin-top: -90px;
+  font-size:medium;
+}
+
+
+a:any-link
+{  
+  color: rgb(0, 39, 211);
+
+  text-decoration: none;
+
+}
+
+.aparece
+{
+  display: block;
+}
+
+.logo{
+  position:absolute;
+  left: 50%;
+  z-index: 1000;
+  top: 5%;
+  width: 500px;
+  margin-left: -250px;;
+}
+
+.mira{
+  position:absolute;
+  left: 50%;
+  z-index: 800;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  margin-top: 10px;
+}
+
+.mao{
+  position:absolute;
+  z-index: 700;
+  bottom: -50px;
+  right: 150px;
+  width: 25%;
 }

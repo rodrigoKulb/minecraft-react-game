@@ -6,6 +6,24 @@ import { useKeyboardControls } from '../hooks/useKeyboardControls';
 import { Vector3 } from 'three';
 
 const SPEED = 6;
+let numMao = 0;
+let movimento = 0;
+
+function animaMao()
+{
+  console.log(numMao);
+  if(numMao<=-80)
+  {
+    movimento = 3;
+  }
+  else if(numMao>=-30)
+  {
+    movimento = -3;
+  }
+  parseFloat(numMao+=movimento);
+  document.getElementById("mao").style.bottom = numMao+'px';
+}
+
 
 export const Player = (props) => {
   const { camera } = useThree();
@@ -32,7 +50,14 @@ export const Player = (props) => {
 
 
 
+
   useFrame(() => {
+
+    if((!jump) && (moveBackward ||moveForward || moveRight || moveLeft))
+    {
+      animaMao();
+    }
+
     camera.position.copy(ref.current.position);
     const direction = new Vector3();
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { usePlane } from 'use-cannon';
 import { TextureLoader, RepeatWrapping } from 'three';
-import grass from '../images/grass.jpg';
+import green from '../images/green.jpg';
 import { useStore } from '../hooks/useStore';
 import useSound from 'use-sound';
 import boopSfx from '../audio/pedra.wav';
@@ -12,7 +12,7 @@ export const Ground = (props) => {
   
   const [play] = useSound(boopSfx);
   const [ref] = usePlane(() => ({ rotation: [-Math.PI / 2, 0, 0], ...props }));
-  const texture = new TextureLoader().load(grass);
+  const texture = new TextureLoader().load(green);
   const [addCube, activeTexture] = useStore((state) => [
     state.addCube,
     state.texture,
