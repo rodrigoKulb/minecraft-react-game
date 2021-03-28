@@ -8,8 +8,10 @@ Créditos de desenvolvimento ao: https://github.com/danba340/
 # JOGO DEMO: 
 https://minecraft-react-game-rodrigokulb.vercel.app/
 
+
 # VÍDEO SOBRE O REPOSITÓRIO
 https://youtu.be/eUP1lZ7O85U
+
 
 ## Como Jogar
 Existem 7 tipos de blocos: vidro, dois tipos de Madeira, grama, terra, tijolo e água.<br />
