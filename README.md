@@ -2,9 +2,11 @@
 
 Esse projeto tem como base de codigo o projeto do https://github.com/danba340/minecraft-react<br>
 Apenas criei algumas melhorias de jogabilidade e performace.<br>
-Crédito de desenvolvimento ao: https://github.com/danba340/
+Créditos de desenvolvimento ao: https://github.com/danba340/
 
-JOGO: https://minecraft-react-game-rodrigokulb.vercel.app/
+
+# JOGO DEMO: 
+https://minecraft-react-game-rodrigokulb.vercel.app/
 
 ## Como Jogar
 
@@ -14,18 +16,13 @@ Você clica com o mouse onde quer adicionar o bloco, e ALT+Click para remover.<b
 
 ![Preview](preview.png 'Preview')
 
-## Want to extend, develop modify?
+## Como Instalar
 
-If you do so or just build a cool world. Please share it with me dbark@hey.com or https://twitter.com/barelydaniel
+Para você rodar em sua maquina basta rodar os comandos abaixo:<br />
 
-In the project directory, you can run:
+yarn install<br />
+yarn start
 
-### `npx start`
+abra [http://localhost:3000](http://localhost:3000) para ver no seu browser.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A página atualiza automaticamente quando salva.<br />
