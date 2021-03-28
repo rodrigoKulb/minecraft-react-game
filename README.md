@@ -12,7 +12,7 @@ https://minecraft-react-game-rodrigokulb.vercel.app/
 ## VÍDEO SOBRE O REPOSITÓRIO
 https://youtu.be/eUP1lZ7O85U
 
-![Preview](https://raw.githubusercontent.com/rodrigoKulb/minecraft-react-game/main/src/images/capa2.png 'Preview')
+![Preview](https://raw.githubusercontent.com/rodrigoKulb/minecraft-react-game/main/src/images/capa1.png 'Preview')
 
 ## Como Jogar
 Existem 7 tipos de blocos: vidro, dois tipos de Madeira, grama, terra, tijolo e água.<br />
