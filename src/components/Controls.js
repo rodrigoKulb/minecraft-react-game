@@ -110,7 +110,7 @@ return(
         <img className="logo" alt="logo" src={logo} />
         <div className="textoExplicativo">
             <center><b>Seja bem-vindo ao Mimecraft Three Fiber</b><br /><br />Saiba mais sobre o assunto nos links abaixo:<br></br> 
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/rodrigoKulb">youtube.com/rodrigoKulb</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/eUP1lZ7O85U">https://youtu.be/eUP1lZ7O85U</a>
             <br></br>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/rodrigoKulb/minecraft-react-game">github.com/rodrigoKulb/minecraft-react-game</a>
             </center>
