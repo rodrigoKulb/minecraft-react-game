@@ -1,18 +1,16 @@
-# Welcome to React three fiber Minecraft
+# Bem-Vindo ao Minecraft React three fiber
 
-This project is just me trying to mimic Minecraft in React.
-How i did it can be seen in this Youtube video:
-[![Video preview](https://img.youtube.com/vi/aWQmuTiThTs/0.jpg)](https://www.youtube.com/watch?v=aWQmuTiThTs)
+Esse projeto tem como base de codigo o projeto do https://github.com/danba340/minecraft-react<br>
+Apenas criei algumas melhorias de jogabilidade e performace.<br>
+Crédito de desenvolvimento ao: https://github.com/danba340/
 
-Demo: https://minecraft-js.vercel.app/
+JOGO: https://minecraft-react-game-rodrigokulb.vercel.app/
 
-## How to play?
+## Como Jogar
 
-Currently it has 5 types of blocks: Grass, Wood, Log, Glass and Dirt.
-You switch blocks with numbers 1-5 on your keyboard.
-You navigate the world with the mouse and WASD.
-You can click to add blocks and Q+Click to remove blocks.
-You world is stored in your browsers local storage.
+Existem 7 tipos de blocos: vidro, dois tipos de Madeira, grama, terra, tijolo e água.<br />
+Você altera os tipos utilizando as teclas númericas de 1 a 7.<br />
+Você clica com o mouse onde quer adicionar o bloco, e ALT+Click para remover.<br /><Br>
 
 ![Preview](preview.png 'Preview')
 
