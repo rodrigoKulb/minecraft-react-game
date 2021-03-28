@@ -1,33 +1,31 @@
-# Welcome to React three fiber Minecraft
+# Bem-Vindo ao Minecraft React three fiber
 
-This project is just me trying to mimic Minecraft in React.
-How i did it can be seen in this Youtube video:
-[![Video preview](https://img.youtube.com/vi/aWQmuTiThTs/0.jpg)](https://www.youtube.com/watch?v=aWQmuTiThTs)
+Esse projeto tem como base de codigo o projeto do https://github.com/danba340/minecraft-react<br>
+Apenas criei algumas melhorias de jogabilidade e performace.<br>
+Créditos de desenvolvimento ao: https://github.com/danba340/
 
-Demo: https://minecraft-js.vercel.app/
 
-## How to play?
+## JOGO DEMO: 
+https://minecraft-react-game-rodrigokulb.vercel.app/
 
-Currently it has 5 types of blocks: Grass, Wood, Log, Glass and Dirt.
-You switch blocks with numbers 1-5 on your keyboard.
-You navigate the world with the mouse and WASD.
-You can click to add blocks and Q+Click to remove blocks.
-You world is stored in your browsers local storage.
 
-![Preview](preview.png 'Preview')
+## VÍDEO SOBRE O REPOSITÓRIO
+https://youtu.be/eUP1lZ7O85U
 
-## Want to extend, develop modify?
+![Preview](https://raw.githubusercontent.com/rodrigoKulb/minecraft-react-game/main/src/images/capa2.png 'Preview')
 
-If you do so or just build a cool world. Please share it with me dbark@hey.com or https://twitter.com/barelydaniel
+## Como Jogar
+Existem 7 tipos de blocos: vidro, dois tipos de Madeira, grama, terra, tijolo e água.<br />
+Você altera os tipos utilizando as teclas númericas de 1 a 7.<br />
+Você clica com o mouse onde quer adicionar o bloco, e ALT+Click para remover.<br /><Br>
 
-In the project directory, you can run:
+## Como Instalar
 
-### `npx start`
+Para você rodar em sua maquina basta rodar os comandos abaixo:<br />
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+yarn install<br />
+yarn start
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+abra [http://localhost:3000](http://localhost:3000) para ver no seu browser.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A página atualiza automaticamente quando salva.<br />
