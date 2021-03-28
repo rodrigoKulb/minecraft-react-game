@@ -5,11 +5,11 @@ Apenas criei algumas melhorias de jogabilidade e performace.<br>
 Créditos de desenvolvimento ao: https://github.com/danba340/
 
 
-# JOGO DEMO: 
+## JOGO DEMO: 
 https://minecraft-react-game-rodrigokulb.vercel.app/
 
 
-# VÍDEO SOBRE O REPOSITÓRIO
+## VÍDEO SOBRE O REPOSITÓRIO
 https://youtu.be/eUP1lZ7O85U
 
 
