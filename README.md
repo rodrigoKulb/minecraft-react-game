@@ -18,7 +18,7 @@ Existem 7 tipos de blocos: vidro, dois tipos de Madeira, grama, terra, tijolo e 
 Você altera os tipos utilizando as teclas númericas de 1 a 7.<br />
 Você clica com o mouse onde quer adicionar o bloco, e ALT+Click para remover.<br /><Br>
 
-![Preview](preview.png 'Preview')
+![Preview](https://raw.githubusercontent.com/rodrigoKulb/minecraft-react-game/main/src/images/capa2.png 'Preview')
 
 ## Como Instalar
 
