@@ -38,12 +38,12 @@ export const Controls = (props) => {
           }
         }).then(res => res.json())
         .then(response => {
-            console.log('Sucesso:', response);
+           // console.log('Sucesso:', response);
 
         })
         .catch(error => console.error('Error:', error));
         setDivSalvar(false); setDivMapas(false);
-      console.log(values);
+      //console.log(values);
     };
 
     function carregaMapaNovo(chave) 
@@ -103,6 +103,7 @@ export const Controls = (props) => {
 
 return(
     <>
+    <div className="contadorCubos" id="contadorCubos">Recomendo não utilizar mais de 500 cubos, pois poderá causar lentidão.</div>
     <img className="mao" alt="mao" id="mao" src={mao} />
     <img className="mira" alt="mira" src={mira} />
     <div id="aparece"> 

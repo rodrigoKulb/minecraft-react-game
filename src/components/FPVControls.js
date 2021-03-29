@@ -16,7 +16,8 @@ setTimeout(function(){
   else{
     document.getElementById("aparece").style.display = 'none';
   }
-  console.log(controls.current.isLocked); }, 500);
+ //console.log(controls.current.isLocked);
+ }, 500);
 
 
   useEffect(() => {

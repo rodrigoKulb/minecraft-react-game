@@ -287,3 +287,15 @@ a:any-link
   right: 150px;
   width: 25%;
 }
+
+.contadorCubos
+{
+  position:absolute;
+  z-index: 800;
+  top: 10px;
+  padding: 5px;
+  left: 10px;
+  width: 25%;
+  background-color: rgb(255, 255, 255);
+  font-size: 12px;
+}

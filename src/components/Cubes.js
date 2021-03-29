@@ -14,6 +14,8 @@ export default function Cubes() {
     state.saveWorld,
   ]);
 
+  document.getElementById('contadorCubos').innerHTML = "Recomendo não utilizar mais de <b>500</b> cubos, pois poderá causar lentidão.<br><b>"+cubes.length+" / 500</b>";
+ 
   // useInterval(
   //   () => {
   //     saveWorld(cubes);

@@ -11,7 +11,7 @@ let movimento = 0;
 
 function animaMao()
 {
-  console.log(numMao);
+  //console.log(numMao);
   if(numMao<=-80)
   {
     movimento = 3;
