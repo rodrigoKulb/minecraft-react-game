@@ -1,4 +1,4 @@
-# Bem-Vindo ao Minecraft React three fiber (Mimecraft)
+# Bem-Vindo ao Minecraft React three fiber
 
 Esse projeto tem como base de codigo o projeto do https://github.com/danba340/minecraft-react<br>
 Apenas criei algumas melhorias de jogabilidade e performace.<br>
